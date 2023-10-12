@@ -33,6 +33,14 @@ section#side-menu nav div {
     cursor: pointer;
 }
 
+section#side-menu nav div:hover {
+    color: white;
+}
+
+section#side-menu nav div:hover svg path {
+    fill: white;
+}
+
 section#side-menu nav > #home {
     border-color: #ADFF2F;
 }
