@@ -1,4 +1,8 @@
 /* GENERAL */
+:root {
+    --bottom-player-height: 100px;
+    --side-menu-height: calc(100vh - 100px);
+}
 
 * {
     box-sizing: border-box;
@@ -11,15 +15,35 @@ body {
     font-weight: 600;
 }
 
+.container {
+    overflow-y: auto;
+    /* height: 50vh; */
+}
+
 /* MAIN */
 
-/* side menu */
+/* side menu start */
 
 section#side-menu {
     background-color: black;
     color: #6D6D6D;
     width: 230px;
-    height: calc(100vh - 100px);
+    height: var(--side-menu-height);
+}
+
+section#side-menu #top-side-menu {
+    height: 230px;
+}
+
+section#side-menu #middle-side-menu {
+    height: calc(var(--side-menu-height) - 230px - 116px);
+}
+
+section#side-menu #bottom-side-menu > div > :first-child {
+    margin-right: 24px;
+    border-bottom: 1px solid #6D6D6D;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 section#side-menu #logo {
@@ -33,8 +57,11 @@ section#side-menu nav div {
     cursor: pointer;
 }
 
-section#side-menu nav div:hover {
+section#side-menu nav div:hover,
+section#side-menu .playlist:hover,
+section#side-menu ul > li:hover {
     color: white;
+    cursor: pointer;
 }
 
 section#side-menu nav div:hover svg path {
@@ -45,10 +72,23 @@ section#side-menu nav > #home {
     border-color: #ADFF2F;
 }
 
-section#side-menu > div,
+section#side-menu > div > div,
 section#side-menu > h4 {
     margin-left: 20px;
 }
+
+section#side-menu ul > li {
+    margin: 16px 0;
+    overflow: auto;
+}
+
+/* playlist */
+
+section#side-menu .fa-square-plus {
+    font-size: 48px;
+}
+
+/* side menu end */
 
 /* bottom player */
 
@@ -56,5 +96,7 @@ section#bottom-player {
     background-color: #222222;
     color: white;
     width: 100vw;
-    height: 100px;
+    height: var(--bottom-player-height);
+    position: relative;
+    z-index: 1;
 }
