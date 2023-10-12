@@ -36,7 +36,8 @@ section#side-menu #top-side-menu {
 }
 
 section#side-menu #middle-side-menu {
-    height: calc(var(--side-menu-height) - 230px - 116px);
+    height: calc(var(--side-menu-height) - 230px - 124px);
+    min-height: 50px;
 }
 
 section#side-menu #bottom-side-menu > div > :first-child {
@@ -59,7 +60,8 @@ section#side-menu nav div {
 
 section#side-menu nav div:hover,
 section#side-menu .playlist:hover,
-section#side-menu ul > li:hover {
+section#side-menu ul > li:hover,
+section#side-menu #bottom-side-menu > div > :first-child:hover {
     color: white;
     cursor: pointer;
 }
@@ -80,6 +82,10 @@ section#side-menu > h4 {
 section#side-menu ul > li {
     margin: 16px 0;
     overflow: auto;
+}
+
+section#side-menu #bottom-side-menu div:hover {
+    cursor: pointer;
 }
 
 /* playlist */
