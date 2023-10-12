@@ -121,7 +121,7 @@ section#content {
     width: calc(100vw - var(--side-menu-width));
     height: calc(100vh - var(--bottom-player-height));
     overflow-y: auto;
-    padding-bottom: 24px;
+    padding-bottom: 32px;
 }
 
 section#content nav {
