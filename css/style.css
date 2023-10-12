@@ -2,6 +2,7 @@
 :root {
     --bottom-player-height: 100px;
     --side-menu-height: calc(100vh - 100px);
+    --side-menu-width: 230px;
 }
 
 * {
@@ -13,12 +14,26 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    color: white;
 }
 
 .container {
     overflow-y: auto;
     /* height: 50vh; */
 }
+
+button {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 14px 36px;
+    border-radius: 48px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+button:hover { scale: 1.1; }
+button:active { scale: 1; }
 
 /* MAIN */
 
@@ -27,7 +42,7 @@ body {
 section#side-menu {
     background-color: black;
     color: #6D6D6D;
-    width: 230px;
+    width: var(--side-menu-width);
     height: var(--side-menu-height);
 }
 
@@ -41,7 +56,7 @@ section#side-menu #middle-side-menu {
 }
 
 section#side-menu #bottom-side-menu > div > :first-child {
-    margin-right: 24px;
+    margin-right: 12px;
     border-bottom: 1px solid #6D6D6D;
     padding-bottom: 16px;
     margin-bottom: 16px;
@@ -79,11 +94,6 @@ section#side-menu > h4 {
     margin-left: 20px;
 }
 
-section#side-menu ul > li {
-    margin: 16px 0;
-    overflow: auto;
-}
-
 section#side-menu #bottom-side-menu div:hover {
     cursor: pointer;
 }
@@ -94,9 +104,47 @@ section#side-menu .fa-square-plus {
     font-size: 48px;
 }
 
+section#side-menu ul > li {
+    margin: 16px 0;
+    overflow: auto;
+}
+
 /* side menu end */
 
-/* bottom player */
+/* content start */
+
+section#content {
+    position: absolute;
+    left: var(--side-menu-width);
+    top: 0;
+    background-color: #1b1f26;
+    width: calc(100vw - var(--side-menu-width));
+    height: calc(100vh - var(--bottom-player-height));
+}
+
+section#content nav {
+    color: #6D6D6D;
+}
+
+section#content nav > * {
+    margin: 16px;
+    font-size: 14px;
+}
+
+section#content nav p:hover {
+    color: white;
+    cursor: pointer;
+}
+
+section#content nav hr {
+    width: 40px;
+    border: 1px solid;
+    margin-top: 4px;
+}
+
+/* content end */
+
+/* bottom player start */
 
 section#bottom-player {
     background-color: #222222;
@@ -106,3 +154,5 @@ section#bottom-player {
     position: relative;
     z-index: 1;
 }
+
+/* bottom player end */
