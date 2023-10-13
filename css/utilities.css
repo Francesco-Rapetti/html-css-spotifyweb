@@ -325,6 +325,7 @@ footer .fa-earth-americas + span {
 
 /* hover */
 .hov-white:hover { color: white; }
+.hov-grey:hover { color: #6D6D6D; }
 .hov-pointer:hover { cursor: pointer; }
 .hov-btn { transition: all .2s ease;}
 .hov-btn:hover { transform: scale(1.1); }
