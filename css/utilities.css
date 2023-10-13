@@ -332,4 +332,5 @@ footer .fa-earth-americas + span {
 
 /* other */
 .pointer { cursor: pointer; }
+.ratio-1-1 { aspect-ratio: 1;}
 
