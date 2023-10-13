@@ -177,6 +177,7 @@
 .w-400 { width: 400px; }
 .w-950 { width: 950px; }
 
+.w-6-25p { width: 6.25%; }
 .w-10p { width: 10%; }
 .w-15p { width: 15%; }
 .w-20p { width: 20%; }
@@ -321,6 +322,13 @@ footer .fa-earth-americas + span {
 
 /* position */
 .relative { position: relative; }
+
+/* hover */
+.hov-white:hover { color: white; }
+.hov-pointer:hover { cursor: pointer; }
+.hov-btn { transition: all .2s ease;}
+.hov-btn:hover { transform: scale(1.1); }
+.hov-btn:active { transform: scale(1); } 
 
 /* other */
 .pointer { cursor: pointer; }

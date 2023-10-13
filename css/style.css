@@ -19,8 +19,9 @@ body {
 
 .container {
     overflow-y: auto;
-    /* height: 50vh; */
 }
+
+/* button */
 
 button {
     color: white;
@@ -34,6 +35,44 @@ button {
 
 button:hover { scale: 1.1; }
 button:active { scale: 1; }
+
+/* slider */
+
+.slider {
+    height: 4px;
+    background-color: #6D6D6D;
+    /* width: 80%; */
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.slider .fill {
+    position: relative;
+    height: 100%;
+    /* width: 25%; */
+    border-radius: 16px;
+    background-color: #C1C1C1;
+
+}
+
+.slider .fill .thumb {
+    display: none;
+    position: absolute;
+    right: -7.5px; /* half thumb width */
+    top: -5.5px; /* half thumb height - half height slider */
+    height: 15px;
+    width: 15px;
+    background-color: #C1C1C1;
+    border-radius: 50%;
+}
+
+.slider:hover .fill {
+    background-color: #ADFF2F;
+}
+
+.slider:hover .fill .thumb {
+    display: block;
+}
 
 /* MAIN */
 
@@ -192,7 +231,8 @@ section#bottom-player #song img {
 /* volume subsection */
 
 section#bottom-player #volume > * {
-    padding-right: 12px;
+    margin-right: 12px;
+    cursor: pointer;
 }
 
 /* bottom player end */
