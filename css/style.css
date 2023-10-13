@@ -83,6 +83,7 @@ section#side-menu {
     color: #6D6D6D;
     width: var(--side-menu-width);
     height: var(--side-menu-height);
+    overflow-y: hidden;
 }
 
 section#side-menu #top-side-menu {
