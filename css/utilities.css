@@ -42,6 +42,9 @@
 .mb-128 { margin-bottom: 128px; }
 
 .ml-8 { margin-left: 8px; }
+.ml-10 { margin-left: 10px; }
+.ml-12 { margin-left: 12px; }
+.ml-14 { margin-left: 14px; }
 .ml-16 { margin-left: 16px; }
 .ml-17 { margin-left: 17px; }
 .ml-18 { margin-left: 18px; }
@@ -49,6 +52,27 @@
 .ml-32 { margin-left: 32px; }
 .ml-40 { margin-left: 40px; }
 .ml-48 { margin-left: 48px; }
+
+.ml-5p { margin-left: 5%; }
+.ml-10p { margin-left: 10%; }
+.ml-15p { margin-left: 15%; }
+.ml-20p { margin-left: 20%; }
+.ml-25p { margin-left: 25%; }
+.ml-30p { margin-left: 30%; }
+.ml-35p { margin-left: 35%; }
+.ml-40p { margin-left: 40%; }
+.ml-45p { margin-left: 45%; }
+.ml-50p { margin-left: 50%; }
+.ml-55p { margin-left: 55%; }
+.ml-60p { margin-left: 60%; }
+.ml-65p { margin-left: 65%; }
+.ml-70p { margin-left: 70%; }
+.ml-75p { margin-left: 75%; }
+.ml-80p { margin-left: 80%; }
+.ml-85p { margin-left: 85%; }
+.ml-90p { margin-left: 90%; }
+.ml-95p { margin-left: 95%; }
+.ml-100p { margin-left: 100%; }
 
 .mr-6 { margin-right: 6px; }
 .mr-8 { margin-right: 8px; }
@@ -242,6 +266,8 @@ li.blue::marker { color: #2867FF; }
 .fs-18 { font-size: 18px; }
 .fs-20 { font-size: 20px; }
 .fs-22 { font-size: 22px; }
+.fs-32 { font-size: 32px; }
+.fs-48 { font-size: 48px; }
 
 .fw-200 { font-weight: 200; }
 .fw-400 { font-weight: 400; }

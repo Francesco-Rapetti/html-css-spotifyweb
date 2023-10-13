@@ -154,7 +154,7 @@ section#content .card-container > div.card:not(.card-container :last-child) {
 }
 
 section#content .card {
-    width: calc(100% / 6 - 16px); /* tutto il container / max numero colonne */
+    width: calc(100% / 6 - 12px); /* tutto il container / max numero colonne */
     cursor: pointer;
 }
 
@@ -173,6 +173,26 @@ section#bottom-player {
     height: var(--bottom-player-height);
     position: relative;
     z-index: 1;
+    padding: 12px;
+}
+
+/* song subsection */
+
+section#bottom-player #song,
+section#bottom-player #player,
+section#bottom-player #volume {
+    width: calc(100% / 3);
+}
+
+section#bottom-player #song img {
+    max-width: 54px;
+}
+
+/* player subsection */
+/* volume subsection */
+
+section#bottom-player #volume > * {
+    padding-right: 12px;
 }
 
 /* bottom player end */

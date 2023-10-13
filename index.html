@@ -178,20 +178,42 @@
             </div>
         </section>
 
-        <section id="bottom-player">
-            <div class="flex j-content-between">
-                <div class="flex j-content-start">
-                    
+        <section id="bottom-player" class="flex j-content-between">
+            <!-- <div class="flex j-content-between a-items-center"> -->
+                <div id="song" class="flex j-content-start a-items-center">
+                    <img src="img/sinister.jpeg" alt="">
+                    <div class="ml-12">
+                        <p>Sinister</p>
+                        <p class="color-grey fs-12">Brano Nome</p>
+                    </div>
+                    <div class="flex pl-32">
+                        <i class="fa-regular fa-heart color-grey"></i>
+                        <i class="fa-regular fa-folder color-grey pl-8"></i>
+                    </div>
                 </div>
 
-                <div class="flex j-content-center">
-                    
+                <div id="player" class="flex fd-column j-content-center a-items-center">
+                    <div class="flex a-items-center">
+                        <i class="fas fa-shuffle pr-16"></i>
+                        <i class="fa-solid fa-backward-step pr-24"></i>
+                        <i class="fa-regular fa-circle-play fs-32 pr-24"></i>
+                        <i class="fa-solid fa-forward-step pr-16"></i>
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </div>
+                    <div class="w-100p flex a-items-center j-content-between mt-16">
+                        <span>0.25</span>
+                        <input type="range" name="" id="">
+                        <span>4.25</span>
+                    </div>
                 </div>
                 
-                <div class="flex j-content-end">
-                    
+                <div id="volume" class="flex j-content-end a-items-center">
+                    <i class="fa-solid fa-list fs-12"></i>
+                    <i class="fa-solid fa-display fs-12"></i>
+                    <i class="fa-solid fa-volume-high fs-12"></i>
+                    <input type="range" name="" id="">
                 </div>
-            </div>
+            <!-- </div> -->
         </section>
     </main>
 </body>
